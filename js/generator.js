@@ -140,6 +140,8 @@ main();
 
 function main()
 {
+	setupCategoryButtons(TEST_WORDS.categoryNames);
+
 	var generateButton = document.getElementById("generateButton");
 	var usernameObject = document.getElementById("username");
 
@@ -150,6 +152,46 @@ function main()
 	  	usernameObject.innerHTML = username + emailAddress;
 	}
 
+	generateButton.click();
+
+}
+
+function setupCategoryButtons(categoryNames)
+{
+	var categoryWrapper = document.getElementById("categorywrapper");
+
+	categoryNames.forEach((categoryName) => 
+	{
+		var categoryButton = createCategoryButton(categoryName);
+		categoryWrapper.appendChild(categoryButton);
+	});
+}
+
+function createCategoryButton(categoryName)
+{
+	var labelNode = document.createElement("label");
+	labelNode.classList.add("category");
+	labelNode.classList.add("checklabel");
+	labelNode.classList.add("first");
+
+	var labelTextNode = document.createElement("p");
+	var labelText = document.createTextNode(categoryName);
+	labelTextNode.appendChild(labelText);
+
+	var inputNode = document.createElement("input");
+	inputNode.classList.add("checkinput");
+	inputNode.setAttribute("type", "checkbox");
+	inputNode.setAttribute("value", categoryName);
+	inputNode.setAttribute("checked", "");
+
+	var divNode = document.createElement("div");
+	divNode.classList.add("checkstyle");
+
+	labelNode.appendChild(labelTextNode);
+	labelNode.appendChild(inputNode);
+	labelNode.appendChild(divNode);
+
+	return labelNode;
 }
 
 function generateUsername(words, formats)
