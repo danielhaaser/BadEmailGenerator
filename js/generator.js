@@ -126,7 +126,7 @@ let TEST_FORMATS =
 
 let EMAIL_ADDRESSES = 
 [
-	"@hotmail.com", "@geocities.com", "@yahoo.com", "@aol.com"
+	"@hotmail.com", "@lycos.com", "@yahoo.com", "@aol.com", "@juno.com", "@compuserve.com", "@prodigy.net", "@earthlink.net", "@mindspring.net"
 ];
 
 var wordLists = {
