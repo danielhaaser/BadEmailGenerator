@@ -140,16 +140,16 @@ main();
 
 function main()
 {
-	// fetch("words.json")
- //  		.then(response => response.json())
- //  		.then(json => console.log(json));
+	var generateButton = document.getElementById("generateButton");
+	var usernameObject = document.getElementById("username");
 
- 	var usernameObject = document.getElementById("username");
-  	var username = generateUsername(TEST_WORDS, TEST_FORMATS);
+	generateButton.onclick = function(e) 
+	{
+	  	var username = generateUsername(TEST_WORDS, TEST_FORMATS);
+	  	var emailAddress = randomElementFromArray(EMAIL_ADDRESSES);
+	  	usernameObject.innerHTML = username + emailAddress;
+	}
 
-  	var emailAddress = randomElementFromArray(EMAIL_ADDRESSES);
-
-  	usernameObject.innerHTML = username + emailAddress;
 }
 
 function generateUsername(words, formats)

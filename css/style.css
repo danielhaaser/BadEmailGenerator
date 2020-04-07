@@ -1,0 +1,212 @@
+body {
+    text-align: center;
+}
+
+.username {
+    font-size: 98px;
+    padding: 40px 0;
+    word-break: break-word;
+}
+
+.uiwrap {
+    display: inline-grid;
+}
+
+.categorywrapper {
+    width: auto;
+    box-sizing: border-box;
+    color: rgb(5, 6, 8);
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+}
+
+.category:after {
+    height: 43px;
+    border-left: 2px solid rgb(136, 140, 143);
+    border-right: 2px solid rgb(255, 255, 255);
+    margin: 0px;
+    position: absolute;
+    right: 0;
+
+}
+
+.category.first {
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: rgb(255, 255, 255);
+}
+
+.category.last {
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: rgb(5, 6, 8);
+}
+
+.category.last:after {
+    height: auto;
+    border: 0;
+}
+
+.category {
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    background-color: rgb(206, 208, 207);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 0px 0px, rgb(223, 224, 227) 1px 1px 0px 1px inset, rgb(136, 140, 143) -1px -1px 0px 1px inset;
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(5, 6, 8);
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 43px;
+    width: auto;
+    white-space: nowrap;
+    text-align: left;
+    line-height: 43px;
+    color: rgb(5, 6, 8);
+    padding: .3rem 7px 0.3rem 0;
+    flex-grow: 1;
+}
+
+.category:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 128);
+}
+
+.button {
+    box-sizing: border-box;
+    background-color: rgb(206, 208, 207);
+    color: rgb(5, 6, 8);
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(5, 6, 8);
+    border-bottom-color: rgb(5, 6, 8);
+    box-shadow: rgb(223, 224, 227) 1px 1px 0px 1px inset, rgb(136, 140, 143) -1px -1px 0px 1px inset;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 35px;
+    width: 100%;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0px 0.5rem;
+    cursor: pointer;
+}
+
+.button:active {
+    border-left-color: rgb(5, 6, 8);
+    border-top-color: rgb(5, 6, 8);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    box-shadow: rgb(136, 140, 143) 1px 1px 0px 1px inset, rgb(223, 224, 227) -1px -1px 0px 1px inset;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.checklabel {
+    padding-left: calc(20px + 0.5rem);
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    margin: 0 0 4px 0;
+}
+
+.checklabel p {
+    margin: 0 0 0 4px;
+}
+
+.checkinput {
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+}
+
+.checkstyle {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 10px inset;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-left-color: rgb(136, 140, 143);
+    border-top-color: rgb(136, 140, 143);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    padding: 2px;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 7px;
+}
+
+/* On mouse-over, add a grey background color */
+.checklabel:hover input ~ .checkstyle {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checklabel input:checked ~ .checkstyle {
+  
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkstyle:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checklabel input:checked ~ .checkstyle:after {
+      content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 1px);
+    width: 3px;
+    height: 7px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-style: solid;
+    border-color: rgb(5, 6, 8);
+    border-image: initial;
+    border-width: 0px 3px 3px 0px;
+}
+
+
+
+.checkstyle:before {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    content: "";
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-left-color: rgb(5, 6, 8);
+    border-top-color: rgb(5, 6, 8);
+    border-right-color: rgb(223, 224, 227);
+    border-bottom-color: rgb(223, 224, 227);
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 10px inset;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.checkstyle:after {
+
+}
