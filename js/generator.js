@@ -2,7 +2,7 @@
 
 let TEST_WORDS = 
 {
-	"categoryNames": ["weed", "sex", "nerd", "gamer", "hacker", "jdm", "urban", "suburban", "hobbies", "movies", "emo", "catchphrases", "music", "sports", "gay", "christian", "names"],
+	"categoryNames": ["weed", "sex", "nerd", "gamer", "hacker", "jdm", "urban", "suburban", "hobbies", "movies", "emo", "catchphrases", "music", "sports", "gay", "christian", "names", "standard"],
 	"categories": 
 	{
 		"weed": 
@@ -107,10 +107,13 @@ let TEST_WORDS =
 			"noun": ["Todd","Jeffrey","Pubert","Jim","Fred","Nancy","Susan","Shannon","Bill","Ted","Max","Kate","Cathy","Michelle","Tom","Barry","Jessica","Ashley","Amanda","Brittany","Jennifer","Sarah","Stephanie","Samantha","Elizabeth","Lauren","Nicole","Megan","Meg","Heather","Amber","Melissa","Tiffany","Danielle","Emily","Rachel","Christina","Kayla","Laura","Kimberly","Rebecca","Courtney","Katherine","Amy","Crystal","Sara","Michael","Christopher","Chris","Matthew","Matt","Joshua","Josh","David","Dave","Andrew","Drew","Daniel","Dan","Justin","James","Richard","Dick","Robert","John","Joseph","Ryan","Nicholas","Nick","William","Brandon","Anthony","Tony","Jonathan","Kevin","Kyle","Eric","Brian","Steven","Steve","Thomas","Tommy","Timothy","Adam","Jacob","Jason","Zachary","Benjamin","Ben"],
 			"postfix": []
 		},
-	},
-	"adjective": ["Excellent","Chatty","Tall","Short","Big","Sweet","Small","Tiny","Little","Huge","Great","Slim"],
-	"noun": ["Haver","Taker","Holder","Eater","Wrangler","Fan","Maker","Wrecker","Smasher","Bringer","Ender","Slammer","Killer","Killa","Mingus","Man","Woman","Boy","Girl","Dude","Bro","Brosef","Gurl","Boi","Champ","Baby","Boyz","Child","Dawg","Idol","Chick"],
-	"postfix": ["HP","XD","HD","XP","XS","XL","XXL","4K","2000","2001","1999","5000","9000","69","6969","1","2","3","4","5"]
+		"standard": 
+		{
+			"adjective": ["Excellent","Chatty","Tall","Short","Big","Sweet","Small","Tiny","Little","Huge","Great","Slim"],
+			"noun": ["Haver","Taker","Holder","Eater","Wrangler","Fan","Maker","Wrecker","Smasher","Bringer","Ender","Slammer","Killer","Killa","Mingus","Man","Woman","Boy","Girl","Dude","Bro","Brosef","Gurl","Boi","Champ","Baby","Boyz","Child","Dawg","Idol","Chick"],
+			"postfix": ["HP","XD","HD","XP","XS","XL","XXL","4K","2000","2001","1999","5000","9000","69","6969","1","2","3","4","5"]
+		}
+	}
 };
 
 let TEST_FORMATS = 
@@ -260,9 +263,9 @@ function generateUsername(words, formats, activeCategories)
 function refreshWordsLists(words,  activeCategories)
 {
 	// add default words
-	wordLists.adjectives = words.adjective;
-	wordLists.nouns = words.noun;
-	wordLists.postfixes = words.postfix;
+	wordLists.adjectives = [];
+	wordLists.nouns = [];
+	wordLists.postfixes = [];
 
 	activeCategories.forEach((category) => 
 	{
