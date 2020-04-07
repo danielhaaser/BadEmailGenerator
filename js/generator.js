@@ -136,6 +136,8 @@ var wordLists = {
 	names: []
 };
 
+var categoryCheckboxes = [];
+
 main();
 
 function main()
@@ -147,7 +149,8 @@ function main()
 
 	generateButton.onclick = function(e) 
 	{
-	  	var username = generateUsername(TEST_WORDS, TEST_FORMATS);
+		var activeCategories = retrieveActiveCategories();
+	  	var username = generateUsername(TEST_WORDS, TEST_FORMATS, activeCategories);
 	  	var emailAddress = randomElementFromArray(EMAIL_ADDRESSES);
 	  	usernameObject.innerHTML = username + emailAddress;
 	}
@@ -167,6 +170,22 @@ function setupCategoryButtons(categoryNames)
 	});
 }
 
+function retrieveActiveCategories()
+{
+	var activeCategories = [];
+
+	categoryCheckboxes.forEach((categoryLabelNode) => 
+	{
+		var checkInput = categoryLabelNode.querySelector(".checkinput");
+		if (checkInput.checked == true)
+		{
+			activeCategories = activeCategories.concat(checkInput.value);
+		}
+	});
+
+	return activeCategories;
+}
+
 function createCategoryButton(categoryName)
 {
 	var labelNode = document.createElement("label");
@@ -182,24 +201,26 @@ function createCategoryButton(categoryName)
 	inputNode.classList.add("checkinput");
 	inputNode.setAttribute("type", "checkbox");
 	inputNode.setAttribute("value", categoryName);
-	inputNode.setAttribute("checked", "");
 
 	var divNode = document.createElement("div");
 	divNode.classList.add("checkstyle");
+	divNode.setAttribute("value", categoryName);
 
 	labelNode.appendChild(labelTextNode);
 	labelNode.appendChild(inputNode);
 	labelNode.appendChild(divNode);
 
+	categoryCheckboxes = categoryCheckboxes.concat(labelNode);
+
 	return labelNode;
 }
 
-function generateUsername(words, formats)
+function generateUsername(words, formats, activeCategories)
 {
 	var username = "";
 
 	// load words using categories
-	refreshWordsLists(words);
+	refreshWordsLists(words, activeCategories);
 
 	// load random format to use
 	format = randomElementFromArray(formats);
@@ -228,15 +249,6 @@ function generateUsername(words, formats)
 				break; 
 		}
 
-		// if (username == "") 
-		// {
-		// 	username = newWord;
-		// }
-		// else 
-		// {
-		// 	username = username + '.' + newWord;
-		// }
-
 		username = username + newWord;
 
 	})
@@ -245,7 +257,7 @@ function generateUsername(words, formats)
 	return username;
 }
 
-function refreshWordsLists(words)
+function refreshWordsLists(words,  activeCategories)
 {
 	// add default words
 	wordLists.adjectives = words.adjective;
@@ -257,7 +269,8 @@ function refreshWordsLists(words)
 	console.log(words.name);
 
 	// add category specific words
-	var activeCategories = words.categoryNames;
+	console.log("active categories");
+	console.log(activeCategories);
 	activeCategories.forEach((category) => 
 	{
 		wordLists.adjectives = wordLists.adjectives.concat(words.categories[category].adjective);

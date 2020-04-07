@@ -3,7 +3,7 @@ body {
 }
 
 .username {
-    font-size: 98px;
+    font-size: 5vw;
     padding: 40px 0;
     word-break: break-word;
 }
@@ -173,7 +173,7 @@ body {
 
 /* Show the checkmark when checked */
 .checklabel input:checked ~ .checkstyle:after {
-      content: "";
+    content: "";
     display: block;
     position: absolute;
     left: 50%;
