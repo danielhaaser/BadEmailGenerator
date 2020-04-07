@@ -7,104 +7,104 @@ let TEST_WORDS =
 	{
 		"weed": 
 		{
-			"adjective": ["dank","purple","green","baked","mexi","cali","dope"],
-			"noun": ["smoke","blunt","dope","maryjane","grass","bud","stems","blaze","haze","wax","bowl","bong","pipe","OG","swag","THC"],
+			"adjective": ["Dank","Purple","Green","Baked","Mexi","Cali","Dope"],
+			"noun": ["Smoke","Blunt","Dope","MaryJane","Grass","Bud","Stems","Blaze","Haze","Wax","Bowl","Bong","Pipe","OG","Schwag","THC"],
 			"postfix": ["420"]
 		},
 		"sex": 
 		{
-			"adjective": ["randy","hot","erect","big","moist","limp","hardcore","anal","wet","pounding","blacked","black","scissoring","assblasting"],
-			"noun": ["69er","pussy","thicc","punani","erector","dick","penis","donger","johnson","ass","assface","asser","clam","blaster","rammer","whale","rimjob","anus","licker","sexer","squirter","grinder","chode","dildo","sex","fingerbang","squirt","MILF","GILF","incest","pounder","licker","assblaster"],
+			"adjective": ["Randy","Hot","Erect","Big","Moist","Limp","Hardcore","Anal","Wet","Pounding","Blacked","Black","Scissoring","AssBlasting"],
+			"noun": ["69er","Pussy","Thicc","Punani","Erector","Dick","Penis","Donger","Johnson","Ass","Assface","Asser","Clam","Blaster","Rammer","Whale","Rimjob","Anus","Licker","Sexer","Squirter","Grinder","Chode","Dildo","Sex","Fingerbang","Squirt","MILF","GILF","Incest","Pounder","Licker","Assblaster"],
 			"postfix": ["69"]
 		},
 		"nerd": 
 		{
-			"adjective": ["sweaty","giga","mega","lanky","quiet","greasy","NULL"],
-			"noun": ["AMD","4K","txt","flash","winamp","nokia","napster","ebaums","T9","username","hotmail","iPod","AOL","cyber","ASL","chatroom","DOS","CD","VHS","geocities","startrek","klingon","PNG","56K","jpg","1080P","www","browser","superhighway","webz","gigabytes","netscape","webportal","dnd"],
-			"postfix": ["4K","2001","1999","5000","9000","42","1080P","56K"]
+			"adjective": ["Sweaty","Giga","Mega","Lanky","Quiet","Greasy","Null"],
+			"noun": ["AMD","4K","TXT","Flash","Winamp","Nokia","Napster","Ebaums","T9","Username","Hotmail","iPod","AOL","Cyber","ASL","Chatroom","DOS","CD","VHS","Geocities","StarTrek","Klingon","PNG","56K","JPG","1080p","WWW","Browser","Superhighway","Webz","Gigabytes","Netscape","Webportal","DnD"],
+			"postfix": ["4K","2001","1999","5000","9000","42","1080p","56K"]
 		},
 		"gamer": 
 		{
-			"adjective": ["watercooled","overclocked","hella"],
-			"noun": ["noscope","xbox","ps2","headshot","frag","geforce","radeon","GFX","killstreak","GPU","noob","PC","CS","quake"],
+			"adjective": ["Watercooled","Overclocked","Hella"],
+			"noun": ["NoScope","Xbox","PS2","Headshot","Fragger","GeForce","Radeon","GFX","Killstreak","GPU","Noob","PC","CS","Quake"],
 			"postfix": ["1337"]
 		},
 		"hacker": 
 		{
-			"adjective": ["1337","ripped","warezed","phishing","torrented"],
-			"noun": ["h4x0r","h4x","spammer","sp4m","phish","haxzor","warez","torrent","pr0n","codez","rip","burner"],
+			"adjective": ["1337","Ripped","Warezed","Phishing","Torrented"],
+			"noun": ["h4x0r","h4x","Spammer","Sp4m","Phish","Haxzor","Warez","Torrent","Pr0n","Codez","Rip","Burner"],
 			"postfix": ["1337","Y2K"]
 		},
 		"jdm": 
 		{
-			"adjective": ["azn","stanced","riced","turboed","neon"],
-			"noun": ["boi","hotboi","QT","stance","rocket","rice","JDM","subaru","honda","mazda","fourbanger","rims","blades","turbo","exhaust"],
+			"adjective": ["AZN","Stanced","Riced","Turboed","Neon"],
+			"noun": ["Boi","HotBoi","QT","Stance","Rocket","Rice","JDM","Subaru","Honda","Mazda","FourBanger","Rims","Blades","Turbo","Exhaust"],
 			"postfix": ["QT","JDM"]
 		},
 		"urban": 
 		{
-			"adjective": ["gangster","lean","blinged","hood","black","ghetto","fire","phat","jiggy"],
-			"noun": ["gangster","bling","blingbling","gat","hoodrat","hooptie","dubs","20s","gunit","dogg","fiddy","chainz","grillz"],
+			"adjective": ["Gangster","Lean","Blinged","Hood","Black","Ghetto","Fire","Phat","Jiggy"],
+			"noun": ["Gangster","Bling","BlingBling","Gat","Hoodrat","Hooptie","Dubs","20s","GUnit","Dogg","Fiddy","Chainz","Grillz"],
 			"postfix": ["187"]
 		},
 		"suburban": 
 		{
-			"adjective": ["racist","white","organic","freerange","renewable","suburban","financial"],
-			"noun": ["white","dolphin","bread","fence","corn","culdesac","lawncare","401K","finance","lawyer","doctor","dentist","laketahoe","condo","stocks","bonds","market","zumba"],
+			"adjective": ["Racist","White","Organic","Freerange","Renewable","Suburban","Financial"],
+			"noun": ["White","Dolphin","Bread","Fence","Corn","CuldeSac","Lawncare","401K","Finance","Lawyer","Doctor","Dentist","Laketahoe","Condo","Stocks","Bonds","Market","Zumba"],
 			"postfix": ["401K"]
 		},
 		"hobbies": 
 		{
-			"adjective": ["surfing","cooking","collecting","reading"],
-			"noun": ["kayak","knitting","cooking","chef","surfer","stamps","coins","books","collector"],
+			"adjective": ["Surfing","Cooking","Collecting","Reading"],
+			"noun": ["Kayak","Knitting","Cooking","Chef","Surfer","Stamps","Coins","Books","Collector"],
 			"postfix": []
 		},
 		"movies": 
 		{
 			"adjective": [],
-			"noun": ["matrix","neo","morpheus","royalewithcheese","gump","schwarzenegger","melgibson","jimcarrey","matrix","neo","morpheus","royalewithcheese","gump","schwarzenegger","melgibson","jimcarrey"],
+			"noun": ["Matrix","Neo","Morpheus","RoyaleWithCheese","Gump","Schwarzenegger","Melgibson","JimCarrey"],
 			"postfix": []
 		},
 		"emo": 
 		{
-			"adjective": ["suicidal","bleeding","crying","sad","dark"],
-			"noun": ["suicide","die","kill","cut","blood","breath","knife"],
+			"adjective": ["Suicidal","Bleeding","Crying","Sad","Dark"],
+			"noun": ["Suicide","Die","Kill","Cut","Blood","Breath","Knife"],
 			"postfix": []
 		},
 		"catchphrases": 
 		{
-			"adjective": ["sweet","fly","rad"],
-			"noun": ["wazzup","doh","asif","talktohand","booyah","mybad","ohsnap","props","yourmom","yomama","scrub","fartknocker","aiight","whatever","whoopass","punk"],
+			"adjective": ["Sweet","Fly","Rad"],
+			"noun": ["Wazzup","Doh","AsIf","TalkToHand","Booyah","MyBad","OhSnap","Props","YourMom","YoMama","Scrub","FartKnocker","Aiight","Whatever","Whoopass","Punk"],
 			"postfix": []
 		},
 		"music": 
 		{
-			"adjective": ["linkin","destinys"],
-			"noun": ["MTV","TRL","carson","nsync","nickelback","techno","eminem","britney","durst","bizkit"],
+			"adjective": ["Linkin","Destinys"],
+			"noun": ["MTV","TRL","Carson","NSync","Nickelback","Techno","Eminem","Britney","Durst","Bizkit"],
 			"postfix": ["MTV","TRL"]
 		},
 		"sports": 
 		{
-			"adjective": ["baller","athletic","fast","quick","agile"],
-			"noun": ["hockey","football","bball","soccer","jordan","gretzky","pippen","rodman","bulls","basketball","champ","champion","player"],
+			"adjective": ["Baller","Athletic","Fast","Quick","Agile"],
+			"noun": ["Hockey","Football","BBall","Soccer","Jordan","Gretzky","Pippen","Rodman","Bulls","Basketball","Champ","Champion","Player"],
 			"postfix": []
 		},
 		"gay": 
 		{
-			"adjective": ["homo","closeted"],
-			"noun": ["twink","bear","beard","gay","queen","drag"],
+			"adjective": ["Homo","Closeted"],
+			"noun": ["Twink","Bear","Beard","Gay","Queen","Drag"],
 			"postfix": []
 		},
 		"christian": 
 		{
-			"adjective": ["blessed","saved","godfearing"],
-			"noun": ["jesus","god","pastor","priest","church","savior"],
+			"adjective": ["Blessed","Saved","Godfearing"],
+			"noun": ["Jesus","God","Pastor","Priest","Church","Savior"],
 			"postfix": []
 		}
 	},
 	"name": ["Todd","Jeffrey","Pubert","Jim","Fred","Nancy","Susan","Shannon","Bill","Ted","Max","Kate","Cathy","Micheelle","Tom","Barry","Jessica","Ashley","Amanda","Brittany","Jennifer","Sarah","Stephanie","Samantha","Elizabeth","Lauren","Nicole","Megan","Meg","Heather","Amber","Melissa","Tiffany","Danielle","Emily","Rachel","Christina","Kayla","Laura","Kimberly","Rebecca","Courtney","Katherine","Amy","Crystal","Sara","Michael","Christopher","Chris","Matthew","Matt","Joshua","Josh","David","Dave","Andrew","Drew","Daniel","Dan","Justin","James","Richard","Dick","Robert","John","Joseph","Ryan","Nicholas","Nick","William","Brandon","Anthony","Tony","Jonathan","Kevin","Kyle","Eric","Brian","Steven","Steve","Thomas","Tommy","Timothy","Adam","Jacob","Jason","Zachary","Benjamin","Ben"],
-	"adjective": ["excellent","chatty","tall","short","big","sweet","small","tiny","little","huge","great","slim"],
-	"noun": ["haver","taker","holder","eater","wrangler","fan","maker","wrecker","smasher","bringer","ender","slammer","killer","killa","mingus","man","woman","boy","girl","dude","bro","brosef","gurl","boi","champ","baby","boyz","child","dawg","idol"],
+	"adjective": ["Excellent","Chatty","Tall","Short","Big","Sweet","Small","Tiny","Little","Huge","Great","Slim"],
+	"noun": ["Haver","Taker","Holder","Eater","Wrangler","Fan","Maker","Wrecker","Smasher","Bringer","Ender","Slammer","Killer","Killa","Mingus","Man","Woman","Boy","Girl","Dude","Bro","Brosef","Gurl","Boi","Champ","Baby","Boyz","Child","Dawg","Idol","Chick", "Phobe"],
 	"postfix": ["HP","XD","HD","XP","XS","XL","XXL","4K","2000","2001","1999","5000","9000","69","6969","1","2","3","4","5"]
 };
 
