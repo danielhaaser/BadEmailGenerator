@@ -186,14 +186,17 @@ function generateUsername(words, formats)
 				break; 
 		}
 
-		if (username == "") 
-		{
-			username = newWord;
-		}
-		else 
-		{
-			username = username + '.' + newWord;
-		}
+		// if (username == "") 
+		// {
+		// 	username = newWord;
+		// }
+		// else 
+		// {
+		// 	username = username + '.' + newWord;
+		// }
+
+		username = username + newWord;
+
 	})
 
 	console.log(username);
