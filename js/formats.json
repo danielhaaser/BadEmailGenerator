@@ -1,0 +1,14 @@
+[
+	["adjective", "name"],
+	["adjective", "name", "postfix"],
+	["adjective", "noun", "name"],
+	["adjective", "noun", "name", "postfix"],
+	["noun", "noun", "name"],
+	["noun", "noun", "name", "postfix"],
+	["adjective", "noun"],
+	["adjective", "noun", "postfix"],
+	["adjective", "noun", "noun"],
+	["adjective", "noun", "noun", "postfix"],
+	["noun", "noun"],
+	["noun", "noun", "postfix"],
+];
