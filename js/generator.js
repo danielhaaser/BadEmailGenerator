@@ -2,7 +2,7 @@
 
 let TEST_WORDS = 
 {
-	"categoryNames": ["weed", "sex", "nerd", "gamer", "hacker", "jdm", "urban", "suburban", "hobbies", "movies", "emo", "catchphrases", "music", "sports", "gay", "christian"],
+	"categoryNames": ["weed", "sex", "nerd", "gamer", "hacker", "jdm", "urban", "suburban", "hobbies", "movies", "emo", "catchphrases", "music", "sports", "gay", "christian", "names"],
 	"categories": 
 	{
 		"weed": 
@@ -100,28 +100,25 @@ let TEST_WORDS =
 			"adjective": ["Blessed","Saved","Godfearing"],
 			"noun": ["Jesus","God","Pastor","Priest","Church","Savior"],
 			"postfix": []
-		}
+		},
+		"names": 
+		{
+			"adjective": [],
+			"noun": ["Todd","Jeffrey","Pubert","Jim","Fred","Nancy","Susan","Shannon","Bill","Ted","Max","Kate","Cathy","Michelle","Tom","Barry","Jessica","Ashley","Amanda","Brittany","Jennifer","Sarah","Stephanie","Samantha","Elizabeth","Lauren","Nicole","Megan","Meg","Heather","Amber","Melissa","Tiffany","Danielle","Emily","Rachel","Christina","Kayla","Laura","Kimberly","Rebecca","Courtney","Katherine","Amy","Crystal","Sara","Michael","Christopher","Chris","Matthew","Matt","Joshua","Josh","David","Dave","Andrew","Drew","Daniel","Dan","Justin","James","Richard","Dick","Robert","John","Joseph","Ryan","Nicholas","Nick","William","Brandon","Anthony","Tony","Jonathan","Kevin","Kyle","Eric","Brian","Steven","Steve","Thomas","Tommy","Timothy","Adam","Jacob","Jason","Zachary","Benjamin","Ben"],
+			"postfix": []
+		},
 	},
-	"name": ["Todd","Jeffrey","Pubert","Jim","Fred","Nancy","Susan","Shannon","Bill","Ted","Max","Kate","Cathy","Michelle","Tom","Barry","Jessica","Ashley","Amanda","Brittany","Jennifer","Sarah","Stephanie","Samantha","Elizabeth","Lauren","Nicole","Megan","Meg","Heather","Amber","Melissa","Tiffany","Danielle","Emily","Rachel","Christina","Kayla","Laura","Kimberly","Rebecca","Courtney","Katherine","Amy","Crystal","Sara","Michael","Christopher","Chris","Matthew","Matt","Joshua","Josh","David","Dave","Andrew","Drew","Daniel","Dan","Justin","James","Richard","Dick","Robert","John","Joseph","Ryan","Nicholas","Nick","William","Brandon","Anthony","Tony","Jonathan","Kevin","Kyle","Eric","Brian","Steven","Steve","Thomas","Tommy","Timothy","Adam","Jacob","Jason","Zachary","Benjamin","Ben"],
 	"adjective": ["Excellent","Chatty","Tall","Short","Big","Sweet","Small","Tiny","Little","Huge","Great","Slim"],
-	"noun": ["Haver","Taker","Holder","Eater","Wrangler","Fan","Maker","Wrecker","Smasher","Bringer","Ender","Slammer","Killer","Killa","Mingus","Man","Woman","Boy","Girl","Dude","Bro","Brosef","Gurl","Boi","Champ","Baby","Boyz","Child","Dawg","Idol","Chick", "Phobe"],
+	"noun": ["Haver","Taker","Holder","Eater","Wrangler","Fan","Maker","Wrecker","Smasher","Bringer","Ender","Slammer","Killer","Killa","Mingus","Man","Woman","Boy","Girl","Dude","Bro","Brosef","Gurl","Boi","Champ","Baby","Boyz","Child","Dawg","Idol","Chick"],
 	"postfix": ["HP","XD","HD","XP","XS","XL","XXL","4K","2000","2001","1999","5000","9000","69","6969","1","2","3","4","5"]
 };
 
 let TEST_FORMATS = 
 [
-	["adjective", "name"],
-	["adjective", "name", "postfix"],
-	["adjective", "noun", "name"],
-	["adjective", "noun", "name", "postfix"],
-	["noun", "noun", "name"],
-	["noun", "noun", "name", "postfix"],
-	["adjective", "noun"],
 	["adjective", "noun", "postfix"],
 	["adjective", "noun", "noun"],
 	["adjective", "noun", "noun", "postfix"],
-	["noun", "noun"],
-	["noun", "noun", "postfix"],
+	["noun", "noun", "postfix"]
 ];
 
 let EMAIL_ADDRESSES = 
@@ -132,8 +129,7 @@ let EMAIL_ADDRESSES =
 var wordLists = {
 	adjectives: [],
 	nouns: [],
-	postfixes: [],
-	names: []
+	postfixes: []
 };
 
 var categoryCheckboxes = [];
@@ -233,27 +229,31 @@ function generateUsername(words, formats, activeCategories)
 		switch(wordType)
 		{
 			case "adjective":
-				newWord = randomElementFromArray(wordLists.adjectives);
+				if (wordLists.adjectives.length > 0) 
+				{
+					newWord = randomElementFromArray(wordLists.adjectives);
+				}
 				break;
 
 			case "noun":
-				newWord = randomElementFromArray(wordLists.nouns);
+				if (wordLists.nouns.length > 0) 
+				{
+					newWord = randomElementFromArray(wordLists.nouns);
+				}
 				break;
 
 			case "postfix":
-				newWord = randomElementFromArray(wordLists.postfixes);
+				if (wordLists.postfixes.length > 0) 
+				{
+					newWord = randomElementFromArray(wordLists.postfixes);
+				}
 				break;
-
-			case "name":
-				newWord = randomElementFromArray(wordLists.names);
-				break; 
 		}
 
 		username = username + newWord;
 
-	})
+	});
 
-	console.log(username);
 	return username;
 }
 
@@ -263,14 +263,7 @@ function refreshWordsLists(words,  activeCategories)
 	wordLists.adjectives = words.adjective;
 	wordLists.nouns = words.noun;
 	wordLists.postfixes = words.postfix;
-	wordLists.names = words.name;
 
-	console.log("word name");
-	console.log(words.name);
-
-	// add category specific words
-	console.log("active categories");
-	console.log(activeCategories);
 	activeCategories.forEach((category) => 
 	{
 		wordLists.adjectives = wordLists.adjectives.concat(words.categories[category].adjective);
