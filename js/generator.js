@@ -5,8 +5,8 @@ let TEST_WORDS =
 		"Standard": 
 		{
 			"default": true,
-			"adjective": ["Excellent","Chatty","Tall","Short","Big","Sweet","Small","Tiny","Little","Huge","Great","Slim", "Gigantic", "Ridiculous", "Shiny", "Gorgeous", "Pulsating", "Lumpy", "Smelly"],
-			"noun": ["Haver","Taker","Holder","Eater","Wrangler","Fan","Maker","Wrecker","Smasher","Bringer","Ender","Slammer","Killer","Killa","Man","Woman","Boy","Girl","Dude","Bro","Gurl","Boi","Champ","Baby","Boyz","Child","Dawg","Idol","Chick"],
+			"adjective": ["Excellent","Chatty","Tall","Short","Big","Sweet","Small","Tiny","Little","Huge","Great","Slim", "Gigantic", "Ridiculous", "Shiny", "Gorgeous", "Pulsating", "Lumpy", "Smelly","Pro"],
+			"noun": ["Haver","Taker","Holder","Eater","Wrangler","Fan","Maker","Wrecker","Smasher","Bringer","Ender","Slammer","Killer","Killa","Man","Woman","Boy","Girl","Dude","Bro","Gurl","Boi","Champ","Baby","Boyz","Child","Dawg","Idol","Chick","Aunt","Uncle","Grandpa","Grandma","Mom","Dad"],
 			"postfix": ["HP","XD","HD","XP","XS","XL","XXL","4K","2000","2001","1999","5000","9000","69","6969","1","2","3","4","5"]
 		},
 		"Names": 
