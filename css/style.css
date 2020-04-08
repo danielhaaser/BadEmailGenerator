@@ -10,6 +10,7 @@ body {
 
 .uiwrap {
     display: inline-grid;
+    max-width: 640px;
 }
 
 .categorywrapper {
@@ -39,13 +40,14 @@ body {
     border-left-style: solid;
     border-left-width: 2px;
     border-left-color: rgb(255, 255, 255);
-}
-
-.category.last {
     border-right-style: solid;
     border-right-width: 2px;
     border-right-color: rgb(5, 6, 8);
 }
+
+/*.category.last {
+
+}*/
 
 .category.last:after {
     height: auto;
@@ -75,11 +77,18 @@ body {
     color: rgb(5, 6, 8);
     padding: .3rem 7px 0.3rem 0;
     flex-grow: 1;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    flex-basis: 32%;   
 }
 
 .category:hover {
     color: rgb(255, 255, 255);
     background: rgb(0, 0, 128);
+}
+
+.category:nth-child(3n-6) {
+    margin-right: 0;
 }
 
 .button {
@@ -104,6 +113,14 @@ body {
     border-width: 2px;
     padding: 0px 0.5rem;
     cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    margin-bottom: 1%;
+
 }
 
 .button:active {
@@ -121,7 +138,6 @@ body {
     cursor: pointer;
     user-select: none;
     font-size: 16px;
-    margin: 0 0 4px 0;
 }
 
 .checklabel p {
