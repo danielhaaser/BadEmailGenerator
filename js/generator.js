@@ -2,28 +2,46 @@ let TEST_WORDS =
 {
 	"categories": 
 	{
+		"Standard": 
+		{
+			"default": true,
+			"adjective": ["Excellent","Chatty","Tall","Short","Big","Sweet","Small","Tiny","Little","Huge","Great","Slim", "Gigantic", "Ridiculous", "Shiny", "Gorgeous", "Pulsating", "Lumpy", "Smelly"],
+			"noun": ["Haver","Taker","Holder","Eater","Wrangler","Fan","Maker","Wrecker","Smasher","Bringer","Ender","Slammer","Killer","Killa","Man","Woman","Boy","Girl","Dude","Bro","Gurl","Boi","Champ","Baby","Boyz","Child","Dawg","Idol","Chick"],
+			"postfix": ["HP","XD","HD","XP","XS","XL","XXL","4K","2000","2001","1999","5000","9000","69","6969","1","2","3","4","5"]
+		},
+		"Names": 
+		{
+			"default": true,
+			"adjective": [],
+			"noun": ["Todd","Jeffrey","Pubert","Jim","Fred","Nancy","Susan","Shannon","Bill","Ted","Max","Kate","Cathy","Michelle","Tom","Barry","Jessica","Ashley","Amanda","Brittany","Jennifer","Sarah","Stephanie","Samantha","Elizabeth","Lauren","Nicole","Megan","Meg","Heather","Amber","Melissa","Tiffany","Danielle","Emily","Rachel","Christina","Kayla","Laura","Kimberly","Rebecca","Courtney","Katherine","Amy","Crystal","Sara","Michael","Christopher","Chris","Matthew","Matt","Joshua","Josh","David","Dave","Andrew","Drew","Daniel","Dan","Justin","James","Richard","Dick","Robert","John","Joseph","Ryan","Nicholas","Nick","William","Brandon","Anthony","Tony","Jonathan","Kevin","Kyle","Eric","Brian","Steven","Steve","Thomas","Tommy","Timothy","Adam","Jacob","Jason","Zachary","Benjamin","Ben"],
+			"postfix": []
+		},
 		"Stoner": 
 		{
+			"default": true,
 			"adjective": ["Dank","Purple","Green","Baked","Mexi","Cali","Dope","Stoned"],
 			"noun": ["Smoke","Blunt","Dope","MaryJane","Grass","Bud","Stems","Blaze","Haze","Wax","Bowl","Bong","Pipe","OG","Schwag","THC", "Weed"],
 			"postfix": ["420"]
 		},
-		"Sex": 
+		"Sexy": 
 		{
+			"default": true,
 			"adjective": ["Randy","Hot","Erect","Big","Moist","Limp","Hardcore","Anal","Wet","Pounding","Blacked","Black","Scissoring","AssBlasting", "Engorged"],
-			"noun": ["69er","Pussy","Thicc","Punani","Erector","Dick","Penis","Donger","Johnson","Ass","Assface","Asser","Clam","Blaster","Rammer","Whale","Rimjob","Anus","Licker","Sexer","Squirter","Grinder","Chode","Dildo","Sex","Fingerbang","Squirt","MILF","GILF","Incest","Pounder","Licker","Assblaster"],
+			"noun": ["69er","Pussy","Thicc","Punani","Erector","Dick","Penis","Donger","Johnson","Ass","Assface","Asser","Clam","Blaster","Rammer","Whale","Rimjob","Anus","Licker","Sexer","Squirter","Grinder","Chode","Dildo","Sex","Fingerbang","Squirt","MILF","GILF","Incest","Pounder","Licker","Assblaster", "Donger"],
 			"postfix": ["69"]
 		},
 		"Nerd": 
 		{
+			"default": true,
 			"adjective": ["Sweaty","Giga","Mega","Lanky","Quiet","Greasy"],
 			"noun": ["AMD","4K","TXT","Flash","Winamp","Nokia","Napster","Ebaums","T9","Username","Hotmail","iPod","AOL","Cyber","ASL","Chatroom","DOS","CD","VHS","Geocities","StarTrek","Klingon","PNG","56K","JPG","1080p","WWW","Browser","Superhighway","Webz","Gigabytes","Netscape","Webportal","DnD"],
 			"postfix": ["4K","2001","1999","5000","9000","42","1080p","56K"]
 		},
 		"Gamer": 
 		{
+			"default": true,
 			"adjective": ["Watercooled","Overclocked","Hella"],
-			"noun": ["NoScope","Xbox","PS2","Headshot","Fragger","GeForce","Radeon","GFX","Killstreak","GPU","Noob","PC","CS","Quake"],
+			"noun": ["NoScope","Xbox","PS2","Headshot","Fragger","GeForce","Radeon","GFX","Killstreak","GPU","Noob","PC","Quake", "Halo"],
 			"postfix": ["1337"]
 		},
 		"Hacker": 
@@ -97,20 +115,6 @@ let TEST_WORDS =
 			"adjective": ["Blessed","Saved","Godfearing"],
 			"noun": ["Jesus","God","Pastor","Priest","Church","Savior"],
 			"postfix": []
-		},
-		"Names": 
-		{
-			"default": true,
-			"adjective": [],
-			"noun": ["Todd","Jeffrey","Pubert","Jim","Fred","Nancy","Susan","Shannon","Bill","Ted","Max","Kate","Cathy","Michelle","Tom","Barry","Jessica","Ashley","Amanda","Brittany","Jennifer","Sarah","Stephanie","Samantha","Elizabeth","Lauren","Nicole","Megan","Meg","Heather","Amber","Melissa","Tiffany","Danielle","Emily","Rachel","Christina","Kayla","Laura","Kimberly","Rebecca","Courtney","Katherine","Amy","Crystal","Sara","Michael","Christopher","Chris","Matthew","Matt","Joshua","Josh","David","Dave","Andrew","Drew","Daniel","Dan","Justin","James","Richard","Dick","Robert","John","Joseph","Ryan","Nicholas","Nick","William","Brandon","Anthony","Tony","Jonathan","Kevin","Kyle","Eric","Brian","Steven","Steve","Thomas","Tommy","Timothy","Adam","Jacob","Jason","Zachary","Benjamin","Ben"],
-			"postfix": []
-		},
-		"Standard": 
-		{
-			"default": true,
-			"adjective": ["Excellent","Chatty","Tall","Short","Big","Sweet","Small","Tiny","Little","Huge","Great","Slim", "Gigantic", "Ridiculous", "Shiny", "Gorgeous", "Pulsating", "Lumpy", "Smelly"],
-			"noun": ["Haver","Taker","Holder","Eater","Wrangler","Fan","Maker","Wrecker","Smasher","Bringer","Ender","Slammer","Killer","Killa","Mingus","Man","Woman","Boy","Girl","Dude","Bro","Brosef","Gurl","Boi","Champ","Baby","Boyz","Child","Dawg","Idol","Chick"],
-			"postfix": ["HP","XD","HD","XP","XS","XL","XXL","4K","2000","2001","1999","5000","9000","69","6969","1","2","3","4","5"]
 		}
 	}
 };
