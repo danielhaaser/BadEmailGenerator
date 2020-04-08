@@ -9,6 +9,7 @@ h1.sitename {
 	color:transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
+	display: inline-block;
 }
 
 h3.instruct {
