@@ -60,6 +60,7 @@ h3.instruct {
 
 .uiwrap {
     display: inline-grid;
+    margin: 0vh 0vh 5vh 0vh;
     max-width: 640px;
 }
 
