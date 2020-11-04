@@ -1,19 +1,31 @@
 body {
     text-align: center;
     background-image: url('../img/bg1.png');
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1;
 }
 
 footer {
     text-align: center;
-    position: fixed;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
     left: 0px;
-    bottom: 5px;
     width: 100%;
     color: #99FF00;
+    /*background-color: grey;*/
+    padding: 0rem;
 }
 
 h1.sitename {
-    font-size: 5rem;
+    font-size: 4rem;
 	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
 	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
 	color:transparent;
@@ -27,15 +39,13 @@ h3.instruct {
 }
 
 .username {
-    font-size: 7vw;
-    padding: 20px 0px 0px 0px;
-    word-break: break-word;
+    font-size: 9vw;
 	color: white;
 }
 
 .emaildomain {
-    font-size: 3vw;
-    padding: 40px 0px 40px 0px;
+    font-size: 4vw;
+    padding: 10px 0px 20px 0px;
     word-break: break-word;
     color: white;
 }
@@ -209,7 +219,7 @@ h3.instruct {
 
 /* On mouse-over, add a grey background color */
 .checklabel:hover input ~ .checkstyle {
-  background-color: #ccc;
+    background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -219,9 +229,9 @@ h3.instruct {
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkstyle:after {
-  content: "";
-  position: absolute;
-  display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 /* Show the checkmark when checked */
@@ -293,5 +303,41 @@ blink {
     }
     100% {
         visibility: visible;
+    }
+}
+
+/* Marquee!!!! */
+
+.marquee {
+     /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);    
+    transform:translateX(100%);
+    /* Apply animation to this element */  
+    -moz-animation: marquee_fill 10s linear infinite;
+    -webkit-animation: marquee_fill 10s linear infinite;
+    animation: marquee_fill 10s linear infinite;
+}
+
+@-moz-keyframes marquee_fill {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+}
+
+@-webkit-keyframes marquee_fill {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes marquee_fill {
+    0%   { 
+        -moz-transform: translateX(100%); /* Firefox bug fix */
+        -webkit-transform: translateX(100%); /* Firefox bug fix */
+        transform: translateX(100%);       
+    }
+    100% { 
+        -moz-transform: translateX(-100%); /* Firefox bug fix */
+        -webkit-transform: translateX(-100%); /* Firefox bug fix */
+        transform: translateX(-100%); 
     }
 }
