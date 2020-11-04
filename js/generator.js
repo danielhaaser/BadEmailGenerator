@@ -148,13 +148,15 @@ function main()
 
 	var generateButton = document.getElementById("generateButton");
 	var usernameObject = document.getElementById("username");
+	var emaildomainObject = document.getElementById("emaildomain");
 
 	generateButton.onclick = function(e) 
 	{
 		var activeCategories = retrieveActiveCategories();
 	  	var username = generateUsername(TEST_WORDS, TEST_FORMATS, activeCategories);
 	  	var emailAddress = randomElementFromArray(EMAIL_ADDRESSES);
-	  	usernameObject.innerHTML = username + emailAddress;
+	  	usernameObject.innerHTML = username;
+	  	emaildomainObject.innerHTML = emailAddress;
 	}
 
 	generateButton.click();

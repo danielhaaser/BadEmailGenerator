@@ -1,9 +1,19 @@
 body {
     text-align: center;
-    background-image: url('../img/bg2.png');
+    background-image: url('../img/bg1.png');
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    bottom: 5px;
+    width: 100%;
+    color: #99FF00;
 }
 
 h1.sitename {
+    font-size: 5rem;
 	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
 	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
 	color:transparent;
@@ -17,10 +27,17 @@ h3.instruct {
 }
 
 .username {
-    font-size: 5vw;
-    padding: 40px 0;
+    font-size: 7vw;
+    padding: 20px 0px 0px 0px;
     word-break: break-word;
 	color: white;
+}
+
+.emaildomain {
+    font-size: 3vw;
+    padding: 40px 0px 40px 0px;
+    word-break: break-word;
+    color: white;
 }
 
 .uiwrap {
@@ -148,6 +165,11 @@ h3.instruct {
     border-width: 2px;
 }
 
+#generateButton {
+    height: 52px;
+    margin-bottom: 17px;
+}
+
 .checklabel {
     padding-left: calc(20px + 0.5rem);
     cursor: pointer;
@@ -240,4 +262,36 @@ h3.instruct {
 
 .checkstyle:after {
 
+}
+
+/* BLINK!!!! */
+
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+    animation: 2s linear infinite condemned_blink_effect;
+}
+
+/* for Safari 4.0 - 8.0 */
+@-webkit-keyframes condemned_blink_effect { 
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
 }
