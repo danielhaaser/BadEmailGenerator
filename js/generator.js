@@ -147,7 +147,7 @@ function main()
 	setupCategoryButtons(TEST_WORDS.categories);
 
 	var generateButton = document.getElementById("generateButton");
-	var usernameObject = document.getElementById("username");
+	var usernameObject = document.getElementById("screenname");
 	var emaildomainObject = document.getElementById("emaildomain");
 
 	generateButton.onclick = function(e) 
