@@ -58,6 +58,10 @@ h3.instruct {
     color: white;
 }
 
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
 .uiwrap {
     display: inline-grid;
     margin: 0vh 0vh 5vh 0vh;
