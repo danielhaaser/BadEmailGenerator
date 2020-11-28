@@ -43,7 +43,7 @@ h1.sitename {
 
 h3.instruct {
 	color: aqua;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .screenname {
@@ -55,7 +55,7 @@ h3.instruct {
     font-size: 4vw;
     padding: 10px 0px 20px 0px;
     word-break: break-word;
-    color: white;
+    color: LightGray;
 }
 
 .serif {
