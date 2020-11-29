@@ -7,13 +7,13 @@ let TEST_WORDS =
 			"default": true,
 			"adjective": ["Excellent","Chatty","Tall","Short","Big","Sweet","Small","Tiny","Little","Huge","Great","Slim", "Gigantic", "Ridiculous", "Shiny", "Gorgeous", "Pulsating", "Lumpy", "Smelly","Pro"],
 			"noun": ["Haver","Taker","Holder","Eater","Wrangler","Fan","Maker","Wrecker","Smasher","Bringer","Ender","Slammer","Killer","Killa","Man","Woman","Boy","Girl","Dude","Bro","Gurl","Boi","Champ","Baby","Boyz","Child","Dawg","Idol","Chick","Aunt","Uncle","Grandpa","Grandma","Mom","Dad"],
-			"postfix": ["HP","XD","HD","XP","XS","XL","XXL","4K","2000","2001","1999","5000","9000","69","6969","1","2","3","4","5"]
+			"postfix": ["HP","XD","HD","XP","XS","XL","XXL","4K","2000","2001","1999","5000","9000","1","2","3","4","5"]
 		},
 		"Names": 
 		{
 			"default": true,
 			"adjective": [],
-			"noun": ["Todd","Jeffrey","Pubert","Jim","Fred","Nancy","Susan","Shannon","Bill","Ted","Max","Kate","Cathy","Michelle","Tom","Barry","Jessica","Ashley","Amanda","Brittany","Jennifer","Sarah","Stephanie","Samantha","Elizabeth","Lauren","Nicole","Megan","Meg","Heather","Amber","Melissa","Tiffany","Danielle","Emily","Rachel","Christina","Kayla","Laura","Kimberly","Rebecca","Courtney","Katherine","Amy","Crystal","Sara","Michael","Christopher","Chris","Matthew","Matt","Joshua","Josh","David","Dave","Andrew","Drew","Daniel","Dan","Justin","James","Richard","Dick","Robert","John","Joseph","Ryan","Nicholas","Nick","William","Brandon","Anthony","Tony","Jonathan","Kevin","Kyle","Eric","Brian","Steven","Steve","Thomas","Tommy","Timothy","Adam","Jacob","Jason","Zachary","Benjamin","Ben"],
+			"noun": ["Todd","Jeffrey","Pubert","Jim","Fred","Nancy","Susan","Shannon","Bill","Ted","Max","Kate","Cathy","Michelle","Tom","Barry","Jessica","Ashley","Amanda","Brittany","Jennifer","Sarah","Stephanie","Samantha","Elizabeth","Lauren","Nicole","Megan","Meg","Heather","Amber","Melissa","Tiffany","Danielle","Emily","Rachel","Christina","Kayla","Laura","Kimberly","Rebecca","Courtney","Katherine","Amy","Crystal","Sara","Michael","Christopher","Chris","Matthew","Matt","Joshua","Josh","David","Dave","Andrew","Drew","Daniel","Dan","Justin","James","Richard","Robert","John","Joseph","Ryan","Nicholas","Nick","William","Brandon","Anthony","Tony","Jonathan","Kevin","Kyle","Eric","Brian","Steven","Steve","Thomas","Tommy","Timothy","Adam","Jacob","Jason","Zachary","Benjamin","Ben"],
 			"postfix": []
 		},
 		"Stoner": 
@@ -33,7 +33,7 @@ let TEST_WORDS =
 		"Nerd": 
 		{
 			"default": true,
-			"adjective": ["Sweaty","Giga","Mega","Lanky","Quiet","Greasy"],
+			"adjective": ["Sweaty","Giga","Mega","Lanky","Quiet","Greasy","Braces"],
 			"noun": ["AMD","4K","TXT","Flash","Winamp","Nokia","Napster","Ebaums","T9","Username","Hotmail","iPod","AOL","Cyber","ASL","Chatroom","DOS","CD","VHS","Geocities","StarTrek","Klingon","PNG","56K","JPG","1080p","WWW","Browser","Superhighway","Webz","Gigabytes","Netscape","Webportal","DnD"],
 			"postfix": ["4K","2001","1999","5000","9000","42","1080p","56K"]
 		},
@@ -123,6 +123,8 @@ let TEST_FORMATS =
 [
 	["adjective", "noun", "postfix"],
 	["adjective", "noun", "noun"],
+	["adjective", "noun"],
+	["noun", "noun"],
 	["adjective", "noun", "noun", "postfix"],
 	["noun", "noun", "postfix"]
 ];
