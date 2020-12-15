@@ -26,15 +26,15 @@ let TEST_WORDS =
 		"Sexy": 
 		{
 			"default": true,
-			"adjective": ["Randy","Hot","Erect","Big","Moist","Limp","Hardcore","Anal","Wet","Pounding","Blacked","Black","Scissoring","AssBlasting", "Engorged"],
-			"noun": ["69er","Pussy","Thicc","Punani","Erector","Dick","Penis","Donger","Johnson","Ass","Assface","Asser","Clam","Blaster","Rammer","Whale","Rimjob","Anus","Licker","Sexer","Squirter","Grinder","Chode","Dildo","Sex","Fingerbang","Squirt","MILF","GILF","Incest","Pounder","Licker","Assblaster", "Donger"],
+			"adjective": ["Randy","Hot","Erect","Big","Moist","Limp","Hardcore","Wet","Pounding","Blacked","Black","Scissoring","AssBlasting", "Engorged", "Sexy"],
+			"noun": ["69er","Puss","Thicc","Punani","Erector","Dick","Penis","Donger","Johnson","Ass","Assface","Asser","Clam","Blaster","Rammer","Rimmer","Licker","Sexer","Squirter","Grinder","Chode","Dildo","Sex","Fingerbang","Squirt","MILF","GILF","Pounder","Licker","Assblaster", "Donger"],
 			"postfix": ["69"]
 		},
 		"Nerd": 
 		{
 			"default": true,
-			"adjective": ["Sweaty","Giga","Mega","Lanky","Quiet","Greasy","Braces"],
-			"noun": ["AMD","4K","TXT","Flash","Winamp","Nokia","Napster","Ebaums","T9","Username","Hotmail","iPod","AOL","Cyber","ASL","Chatroom","DOS","CD","VHS","Geocities","StarTrek","Klingon","PNG","56K","JPG","1080p","WWW","Browser","Superhighway","Webz","Gigabytes","Netscape","Webportal","DnD"],
+			"adjective": ["Sweaty","Giga","Mega","Lanky","Quiet","Greasy","Pimpled","Spotty"],
+			"noun": ["Braces","BraceFace","AMD","4K","TXT","Flash","Winamp","Nokia","Napster","Ebaums","T9","Username","Hotmail","iPod","AOL","Cyber","ASL","Chatroom","DOS","CD","VHS","Geocities","StarTrek","Klingon","PNG","56K","JPG","1080p","WWW","Browser","Superhighway","Webz","Gigabytes","Netscape","Webportal","DnD"],
 			"postfix": ["4K","2001","1999","5000","9000","42","1080p","56K"]
 		},
 		"Gamer": 
